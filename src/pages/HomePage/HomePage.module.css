@@ -1,0 +1,6 @@
+.homePage {
+    width: 100%;
+    height: auto;
+    padding: 3rem 5%;
+    background-color: var(--background-gray);
+}
