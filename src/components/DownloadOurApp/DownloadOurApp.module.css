@@ -1,0 +1,23 @@
+.downloadOurApp {
+  width: 100%;
+  height: auto;
+  padding: 1rem 1.5rem 0.5rem 1.5rem;
+  background-color: var(--primary-white);
+  border-radius: 15px;
+}
+.heading {
+  color: var(--primary-black);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.para {
+  color: var(--primary-black);
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-bottom: 0.875rem;
+}
+.download_from {
+  width: 90%;
+  cursor: pointer;
+  margin: 0.15rem 0;
+}

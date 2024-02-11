@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: flex-end;
   padding: 2.25rem 5%;
+  background-color: var(--primary-white);
 }
 .logout_btn {
   display: flex;
@@ -12,12 +13,12 @@
   justify-content: center;
   cursor: pointer;
   font-size: 1.125rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   gap: 0.65rem;
   background-color: transparent;
   border: none;
 }
 .logout_btn img {
-  width: 1.5rem;
+  width: 1.45rem;
   height: auto;
 }

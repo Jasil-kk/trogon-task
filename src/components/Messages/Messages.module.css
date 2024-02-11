@@ -1,0 +1,93 @@
+.messages {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: var(--primary-white);
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.heading_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-black);
+}
+.seeAll {
+  color: var(--dark-pink);
+  cursor: pointer;
+  user-select: none;
+  font-size: 1rem;
+}
+.message_list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.5rem;
+}
+.message_card {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.65rem 0;
+  border-bottom: 2px solid var(--light-pink);
+}
+.message_card:last-child {
+  border: none;
+}
+.profile {
+  width: 2.85rem;
+  height: 2.85rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.name {
+  color: var(--primary-black);
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+.message {
+  margin-top: -2px;
+  color: var(--secondary-black);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.time {
+  margin-left: auto;
+  color: var(--dark-gray);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.tabs_container {
+  margin-top: 1.25rem;
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--light-pink);
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.45rem;
+}
+.tab {
+  width: 50%;
+  color: var(--primary-black);
+  font-size: 1.1rem;
+  display: grid;
+  place-items: center;
+  padding: 2px;
+  border-radius: 10px;
+}
+.active {
+  color: var(--primary-white);
+  background-color: var(--dark-pink);
+}

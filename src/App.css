@@ -2,17 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Outfit", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
   --primary-white: #ffffff;
   --primary-black: #000000;
-  --secondary-black: #090909;
-  --dark-pink: #D91375;
+  --secondary-black: #292828;
+  --dark-pink: #d91375;
   --light-pink: #f3bbd6;
-  --light-gray:#B2B2B2;
-  --background-gray:#F6F6F6;
+  --dark-gray: #5e6870;
+  --light-gray: #a9a7a7;
+  --background-gray: #f6f6f6;
 }
 
 .App {
