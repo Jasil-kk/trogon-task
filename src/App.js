@@ -1,10 +1,15 @@
-import './App.css';
-import { HomePage } from './pages/HomePage/HomePage';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import { HomePage } from "./pages/HomePage/HomePage";
+import { SingleView } from "./pages/SingleView/SingleView";
 
 function App() {
   return (
     <div className="App">
-      <HomePage/>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/singleview" element={<SingleView />} />
+      </Routes>
     </div>
   );
 }

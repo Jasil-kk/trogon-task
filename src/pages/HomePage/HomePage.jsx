@@ -12,8 +12,11 @@ import faheema from "../../assets/faheema.jpg";
 import jezna from "../../assets/jezna.jpg";
 import hiba from "../../assets/hiba.jpg";
 import sherin from "../../assets/sherin.jpg";
+import { useNavigate } from "react-router-dom";
 
 export const HomePage = () => {
+  const navigate = useNavigate();
+
   const partners = [
     {
       picture: faheema,
@@ -68,6 +71,7 @@ export const HomePage = () => {
               name={partner?.name}
               distance={partner?.distance}
               description={partner?.description}
+              onClick={() => navigate("/singleview")}
             />
           ))}
         </div>
