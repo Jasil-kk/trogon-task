@@ -55,6 +55,10 @@ export const HomePage = () => {
     },
   ];
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className={classes.homePage}>
       <Header />
@@ -71,7 +75,10 @@ export const HomePage = () => {
               name={partner?.name}
               distance={partner?.distance}
               description={partner?.description}
-              onClick={() => navigate("/singleview")}
+              onClick={() => {
+                navigate(`/singleview/${index}`);
+                scrollToTop();
+              }}
             />
           ))}
         </div>

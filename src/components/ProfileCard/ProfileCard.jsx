@@ -10,14 +10,23 @@ import {
   faRocket,
   faBinoculars,
 } from "@fortawesome/free-solid-svg-icons";
+import {useNavigate} from "react-router-dom"
+
 export const ProfileCard = () => {
+  const navigate = useNavigate();
+
   const navItems = [
-    { icon: faHouse, text: "Home" },
+    { icon: faHouse, text: "Home",route: "/" },
     { icon: faMessage, text: "Messages" },
     { icon: faGear, text: "Settings" },
     { icon: faRocket, text: "Upgrade" },
     { icon: faBinoculars, text: "Explore" },
   ];
+
+  const handleNavigation = (route) => {
+    navigate(route);
+  };
+
   return (
     <div className={classes.profileCard}>
       <img src={profile} alt="Profile" className={classes.profile_image} />
@@ -38,6 +47,7 @@ export const ProfileCard = () => {
             className={`${classes.nav_item} ${
               index === 0 ? classes.active : ""
             }`}
+            onClick={() => handleNavigation(item.route)} 
           >
             <FontAwesomeIcon
               icon={item.icon}

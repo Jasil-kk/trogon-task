@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/singleview" element={<SingleView />} />
+        <Route path="/singleview/:id" element={<SingleView />} />
       </Routes>
     </div>
   );
